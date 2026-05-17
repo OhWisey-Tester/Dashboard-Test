@@ -517,5 +517,14 @@
     render();
     initCloud();
   </script>
+  <section id="splitlog-root"></section>
+<script src="https://ohwisey.github.io/splitlog/splitlog.bundle.js"></script>
+<script>
+  SplitLog.mount(document.getElementById('splitlog-root'), {
+    supabaseClient: window.OhWisey.supabase,
+    userId: window.OhWisey.userId,
+    mode: 'embed'
+  });
+</script>
 </body>
 </html>
