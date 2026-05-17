@@ -644,15 +644,7 @@
     render();
     initCloud().then(flushModuleQueue);
   </script>
-<section id="splitlog-root"></section>
-<script src="https://ohwisey.github.io/splitlog/splitlog.bundle.js"></script>
-<script>
-  SplitLog.mount(document.getElementById('splitlog-root'), {
-    supabaseClient: window.MyDashboard.supabase,  // optional — uses parent's session
-    userId: window.MyDashboard.userId,            // optional — explicit user id
-    mode: 'embed',                                // 'embed' (default) | 'standalone'
-    view: 'full',                                 // 'full' (default) | 'today'
-  });
+<script src="https://ohwisey.github.io/splitlog/embed.js"></script>
 </script>
 </body>
 </html>
